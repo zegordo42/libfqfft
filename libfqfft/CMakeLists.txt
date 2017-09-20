@@ -1,3 +1,10 @@
+add_library(fqfft INTERFACE)
+
+target_include_directories(
+  fqfft 
+  INTERFACE ..
+)
+
 install(
   DIRECTORY "" DESTINATION "include/libfqfft"
   FILES_MATCHING
